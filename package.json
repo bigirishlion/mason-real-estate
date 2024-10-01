@@ -1,8 +1,14 @@
 {
-  "name": "mason-real-estate",
-  "description": "Isaiah Mason Real Estate",
-  "version": "1.0.0",
-  "author": "Bigirishlion",
+  "name": "mason-built-construction",
+  "version": "0.0.2",
+  "description": "Isaiah Mason Website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-spectral.git"
+  },
+  "author": {
+    "name": "BigIrishLion"
+  },
   "dependencies": {
     "gatsby": "^4.2.0",
     "gatsby-plugin-manifest": "^4.2.0",
@@ -18,10 +24,6 @@
     "sass": "^1.47.0",
     "smoothscroll-polyfill": "^0.4.4"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
     "build": "npm run clean && gatsby build",
@@ -36,8 +38,14 @@
     "prettier": "^2.4.1",
     "rimraf": "^3.0.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  }
+  "keywords": [
+    "gatsby",
+    "gatsby-starter",
+    "gatsby-starter-spectral"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anubhavsrivastava/gatsby-starter-spectral/issues"
+  },
+  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-spectral#readme"
 }
