@@ -9,7 +9,7 @@ module.exports = {
   plugins: ["gatsby-plugin-sass", {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/elk-head.ico"
+      "icon": "src/images/elk-head.png"
     }
   }]
 };
