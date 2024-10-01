@@ -1,42 +1,25 @@
+const config = require('./config');
+
 module.exports = {
+  pathPrefix: config.pathPrefix,
   siteMetadata: {
-    title: 'Isaiah Mason',
-    author: 'Isaiah Mason',
-    description: 'Licensed Real Estate Broker',
+    title: config.siteTitle,
   },
-  pathPrefix: '/',
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        path: `${__dirname}/src/posts`,
-        name: 'posts',
+        name: config.manifestName,
+        short_name: config.manifestShortName,
+        start_url: config.pathPrefix || config.manifestStartUrl,
+        background_color: config.manifestBackgroundColor,
+        theme_color: config.manifestThemeColor,
+        display: config.manifestDisplay,
+        icon: config.manifestIcon, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 630,
-            },
-          },
-          'gatsby-remark-copy-linked-files',
-        ],
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
+    'gatsby-plugin-sass',
+    'gatsby-plugin-offline',
   ],
-}
+};

@@ -1,40 +1,43 @@
 {
-  "name": "gatsby-starter-dimension",
-  "description": "Gatsby Starter - Dimension by HTML5 UP",
+  "name": "mason-real-estate",
+  "description": "Isaiah Mason Real Estate",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Bigirishlion",
   "dependencies": {
-    "gatsby": "^1.9.279",
-    "gatsby-image": "^1.0.42",
-    "gatsby-link": "^1.6.39",
-    "gatsby-plugin-google-analytics": "^1.0.24",
-    "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-sass": "^1.0.23",
-    "gatsby-plugin-sharp": "^1.6.41",
-    "gatsby-remark-copy-linked-files": "^1.5.30",
-    "gatsby-remark-images": "^1.5.56",
-    "gatsby-source-filesystem": "^1.5.27",
-    "gatsby-transformer-remark": "^1.7.37",
-    "gatsby-transformer-sharp": "^1.6.22",
-    "lodash": "^4.17.4"
+    "gatsby": "^4.2.0",
+    "gatsby-plugin-manifest": "^4.2.0",
+    "gatsby-plugin-offline": "^5.2.0",
+    "gatsby-plugin-react-helmet": "^5.2.0",
+    "gatsby-plugin-sass": "^5.2.0",
+    "node-sass": "^6.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^5.2.1",
+    "react-images": "^1.1.0",
+    "react-scrollspy": "^3.4.2",
+    "sass": "^1.47.0",
+    "smoothscroll-polyfill": "^0.4.4"
   },
-  "homepage": "https://github.com/ChangoMan/gatsby-starter-dimension",
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
-  "main": "n/a",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "npm run clean && gatsby build",
+    "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
+    "serve": "gatsby serve",
+    "clean": "rimraf .cache public",
+    "format": "prettier --write '**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ChangoMan/gatsby-starter-dimension.git"
-  },
-  "scripts": {
-    "dev": "gatsby develop",
-    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "gatsby develop",
-    "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   }
 }
