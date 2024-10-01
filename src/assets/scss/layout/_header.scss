@@ -48,10 +48,10 @@
 		}
 
 		.logo {
-			width: 5.5rem;
-			height: 5.5rem;
-			line-height: 5.5rem;
-			background: url('../../images/lion-face-outlined-front.svg');
+			width: 7.5rem;
+			height: 7.5rem;
+			line-height: 7.5rem;
+			background: url('../../images/elk-head.svg');
 			background-size: cover;
 		}
 
@@ -113,6 +113,7 @@
 						letter-spacing: _font(letter-spacing);
 						font-size: 0.8rem;
 						border-bottom: 0;
+						cursor: pointer;
 
 						&:hover {
 							background-color: _palette(border-bg);
