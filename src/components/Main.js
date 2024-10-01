@@ -1,9 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
 import isaiah1 from '../images/isaiah-1.jpg'
 
 const Main = (props) => {
