@@ -1,15 +1,14 @@
 module.exports = {
-    siteTitle: 'Mason Built Construction', // <title>
-    manifestName: 'Mason Built Construction',
-    manifestShortName: 'Mason Built Construction', // max 12 characters
+    siteTitle: 'Isaiah Mason Real Estate Broker', // <title>
+    manifestName: 'Isaiah Mason Real Estate Broker',
+    manifestShortName: 'Isaiah Mason Real Estate Broker', // max 12 characters
     manifestStartUrl: '/',
     manifestBackgroundColor: '#f58d20',
     manifestThemeColor: '#f58d20',
     manifestDisplay: 'standalone',
-    manifestIcon: 'src/assets/img/hammer-icon.png',
     pathPrefix: `/about/`, // This path is subpath of your hosting https://domain/portfolio
-    heading: 'Mason Built Construction',
-    subHeading: 'Craftsmanship Done Right. The First Time',
+    heading: 'Isaiah Mason Real Estate Broker',
+    subHeading: 'Licensed Real Estate Broker',
     // social
     socialLinks: [
       {
