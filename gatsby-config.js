@@ -1,25 +1,15 @@
-const config = require('./config');
-
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
 module.exports = {
-  pathPrefix: config.pathPrefix,
   siteMetadata: {
-    title: config.siteTitle,
+    title: `Isaiah Mason Real Estate Broker`,
+    siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: [
-    'gatsby-plugin-react-helmet',
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: config.manifestName,
-        short_name: config.manifestShortName,
-        start_url: config.pathPrefix || config.manifestStartUrl,
-        background_color: config.manifestBackgroundColor,
-        theme_color: config.manifestThemeColor,
-        display: config.manifestDisplay,
-        icon: config.manifestIcon, // This path is relative to the root of the site.
-      },
-    },
-    'gatsby-plugin-sass',
-    'gatsby-plugin-offline',
-  ],
+  plugins: ["gatsby-plugin-sass", {
+    resolve: 'gatsby-plugin-manifest',
+    options: {
+      "icon": "src/images/icon.png"
+    }
+  }]
 };
