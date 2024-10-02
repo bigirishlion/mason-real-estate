@@ -19,6 +19,11 @@ const Main = (props) => {
 
         <article id="contact" className={`${props.article === 'contact' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
           <h2 className="major">Contact</h2>
+          <p> Windermere Country Roads, LLC<br />
+              150 NW 4th Street<br />
+              Prineville, OR 97754
+          </p>
+          <p>Office: 541-447-7502</p>
           <form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="b-f">
             <input type="hidden" name="b-f" />
             <div className="field half first">
@@ -38,9 +43,6 @@ const Main = (props) => {
               <li><input type="reset" value="Reset" /></li>
             </ul>
           </form>
-          <ul className="icons">
-            <li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li>
-          </ul>
           {close}
         </article>
 
