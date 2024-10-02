@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `Isaiah Mason Real Estate Broker`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.isaiahmasonrealestate.com`
   },
   plugins: ["gatsby-plugin-sass", {
     resolve: 'gatsby-plugin-manifest',

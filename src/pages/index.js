@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useStaticQuery, graphql } from "gatsby"
 import '../assets/scss/main.scss'
 import Header from "../components/Header"
 import Footer from '../components/Footer';
@@ -73,4 +74,16 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => {
+  const data = useStaticQuery(graphql`
+    query HeaderQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+  
+  return <title>{data.site.siteMetadata.title}</title>
+}
