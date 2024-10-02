@@ -3,6 +3,17 @@ import React from 'react'
 import isaiah1 from '../images/isaiah-1.jpg'
 
 const Main = (props) => {
+  /**
+   * 
+   * @param {HTMLFormElement} e 
+   */
+    const onSubmit = (e) => {
+      e.preventDefault()
+      const formData = new FormData(e.target);
+      const message = formData.get('message') || 'Hi Isaiah, I am interested in setting up a time to meet to discuss my real estate needs.';
+      window.location.href = `mailto:isaiahmason@windermere.com?subject=Real Estate Inquiry&body=${message}`;
+    }
+
     let close = <div className="close" onClick={() => { props.onCloseArticle() }}></div>
 
     return (
@@ -24,16 +35,12 @@ const Main = (props) => {
               Prineville, OR 97754
           </p>
           <p>Office: 541-447-7502</p>
-          <form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="b-f">
+          <form name="contact" onSubmit={onSubmit}>
             <input type="hidden" name="b-f" />
-            <div className="field half first">
+            {/* <div className="field first">
               <label htmlFor="name">Name</label>
               <input type="text" required name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="email" required name="email" id="email" />
-            </div>
+            </div> */}
             <div className="field">
               <label htmlFor="message">Message</label>
               <textarea name="message" id="message" rows="4"></textarea>
