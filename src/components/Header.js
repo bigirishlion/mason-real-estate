@@ -1,6 +1,7 @@
 import React from 'react'
 
 import windermere_logo from '../images/windermere-country-roads-logo.png'
+import remax_logo from '../images/remax-out-west-realty-logo.jpg'
 
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
@@ -9,7 +10,7 @@ const Header = (props) => (
             <div className="inner">
                 <h1>Isaiah Mason</h1>
                 <p>Licensed Real Estate Broker</p>
-                <img src={windermere_logo} alt="Windermere Real Estate Country Roads" />
+                <img src={remax_logo} alt="Windermere Real Estate Country Roads" />
             </div>
         </div>
         <nav>

@@ -23,9 +23,9 @@ const Main = (props) => {
           <span className="image main"><img src={isaiah1} alt="" /></span>
           <p>I&apos;m Isaiah Mason, bringing a unique blend of compassion and competitiveness to the real estate world. With many years of experience in customer service and sales, I&apos;ve learned that success isn&apos;t just about closing deals—it&apos;s about helping people achieve their dreams. That&apos;s my edge: a heartfelt commitment to your goals paired with the tenacity to negotiate the best deal.</p>
           <p>As I grow my real estate career, I&apos;m dedicated to helping clients navigate the complexities of buying and selling properties, ensuring each transaction is smooth and successful. Real estate is about more than transactions; it&apos;s about building meaningful relationships, creating homes, and contributing to a thriving community—one I love right here in Prineville.</p>
-          <p>I chose to partner with Windermere Country Roads because of their unwavering commitment to clients, dedication to giving back to the community, and focus on doing what is right. While being new to real estate can present challenges, I&apos;m surrounded by a supportive team that offers over 50 years of combined knowledge and experience.</p>
+          <p>I chose to partner with RE/MAX Out West Realty because of their unwavering commitment to clients, dedication to giving back to the community, and focus on doing what is right. While being new to real estate can present challenges, I&apos;m surrounded by a supportive team that offers over 50 years of combined knowledge and experience.</p>
           <p>Outside of work, you&apos;ll find me making memories with my family. My daughter is my greatest accomplishment—watching her grow is my greatest joy. In my free time, I enjoy hunting, fishing, camping, and shooting, which allow me to connect with nature and recharge.</p>
-          <p>Let me help guide you to your next home—a place that&apos;s more than just a property, but a true sanctuary where your story can unfold</p>
+          <p>Let me help guide you to your next home—a place that&apos;s more than just a property, but a true sanctuary where your story can unfold.</p>
           {close}
         </article>
 
