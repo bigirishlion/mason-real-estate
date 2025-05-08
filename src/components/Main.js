@@ -31,12 +31,12 @@ const Main = (props) => {
 
         <article id="contact" className={`${props.article === 'contact' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
           <h2 className="major">Contact</h2>
-          <p> Windermere Country Roads, LLC<br />
-              150 NW 4th Street<br />
+          <p>RE/MAX Out West Realty<br />
+              236 N Main Street<br />
               Prineville, OR 97754
           </p>
           <p>
-            Office: 541-447-7502<br />
+            Office: 541-447-8993<br />
             Cell: 503-819-0039
           </p>
           <form name="contact" onSubmit={onSubmit}>
