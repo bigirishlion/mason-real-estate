@@ -32,7 +32,7 @@ const Main = (props) => {
         <article id="contact" className={`${props.article === 'contact' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
           <h2 className="major">Contact</h2>
           <p>RE/MAX Out West Realty<br />
-              236 N Main Street<br />
+              896 NE 3rd St<br />
               Prineville, OR 97754
           </p>
           <p>
